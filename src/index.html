@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Expoarticulos.com</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="collapse" id="navbarToggleExternalContent">
+        <div class="bg-dark p-4">
+            <h5 class="text-white h4">ExpoArticulos UD</h5>
+            <span class="text-muted">Articulos exclusivos de gran valor. Oferta por el producto que estes interesado y luego se procesara la transaccion para guardar un cupo en la subasta.
+            </span><br>
+            <span class="text-muted">Desarrollado por Juan David Neisa y Jorge Escobar en el curso de Redes de comunicacion III de la Universidad Distrital FJC. Version 1.0.</span>
+        </div>
+    </div>
+    <nav class="navbar navbar-dark bg-dark">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+        <div class="container" style="display: inline;">
+            <h2 class="navbar-brand">ExpoArticulo.com</h2>
+        </div>
+    </nav>
+
+    <div id="loader">
+        <p class="text-center">Cargando...</p>
+    </div>
+    <hr/>
+    <br/>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col">
+                <div id="content" style="display: none;">
+                    <div id="productos" class="container-fluid"></div>
+                </div>
+            </div>
+            <div class="col">
+                <h2>--Factura--</h2>
+                <h3 id="id_producto"></h3>
+                <h3 id="nombre_producto"></h3>
+                <form onSubmit="App.emitirCompra(); return false;">
+                    <button type="submit" class="btn btn-primary">Ofertar</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    </div>
+
+    <nav class="footer navbar-fixed-bottom navbar navbar-dark bg-primary">
+        <p id="accountAddress" class="text-center"></p>
+    </nav>
+
+    <!-- jQuery  -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!--source-->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/web3.min.js"></script>
+    <script src="js/truffle-contract.js"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>
