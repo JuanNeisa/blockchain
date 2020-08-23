@@ -22,16 +22,16 @@ $ npm install
 ## Paso 3. Iniciar Ganache
 Abra el servicio de cliente de Ganache que descargó e instaló. Esto iniciará su instancia de blockchain local.
 
-## Step 4. Compilar y desplegar el Contrato Inteligente
+## Paso 4. Compilar y desplegar el Contrato Inteligente
 Debe migrar el contrato inteligente cada vez que reinicie su ganache.
 `$ truffle migrate --reset`
 
-## Step 5. Configuracion de MetaMask
+## Paso 5. Configuracion de MetaMask
 - Abra la extencion de MetaMask
 - Conecte la MetaMask a su cadena de bloques Etherum local proporcionada por Ganache.
 - Importe una cuenta proporcionada por ganache.
 
-## Step 6. Ejecutar el Front-End
+## Paso 6. Ejecutar el Front-End
 Si desea visualizar el entorno grafico diseñado para el despliegue de la aplicacion utilizaremos la red Local generada por NodeJs
 `$ npm run dev`
 
